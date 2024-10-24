@@ -585,3 +585,21 @@ Text_NPC6_PreFlag:
 Text_NPC6_PostFlag:
     .string "You’re working with {COLOR RED}EA{COLOR DARK_GRAY}? Thank the gods...\n"
     .string "Please, help us before it's too late.$"
+
+MossdeepCity_EventScript_TempleReminder::
+    lock
+    faceplayer
+    msgbox gText_Villager_TempleReminder, MSGBOX_SIGN
+    applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerStepLeft
+    waitmovement OBJ_EVENT_ID_PLAYER
+    release
+    end
+
+Movement_PlayerStepLeft:
+    walk_left
+    step_end
+
+gText_Villager_TempleReminder:
+    .string "Hey! {COLOR BLUE}EA{COLOR DARK_GRAY} said he needed to see you\n"
+    .string "at the {COLOR GREEN}E-ABZU TEMPLE{COLOR DARK_GRAY}.\n"
+    .string "You should go there first!$"

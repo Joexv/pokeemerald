@@ -24,11 +24,6 @@
       "direction": "left"
     },
     {
-      "map": "MAP_ROUTE125",
-      "offset": 0,
-      "direction": "right"
-    },
-    {
       "map": "MAP_MOSSDEEP_CITY",
       "offset": 40,
       "direction": "right"

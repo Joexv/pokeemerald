@@ -4658,6 +4658,71 @@
         {
           "map": "MAP_ROUTE125",
           "base_label": "gRoute125",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 45,
+                "max_level": 52,
+                "species": "SPECIES_HOUNDOOM"
+              },
+              {
+                "min_level": 45,
+                "max_level": 52,
+                "species": "SPECIES_SCYTHER"
+              },
+              {
+                "min_level": 45,
+                "max_level": 52,
+                "species": "SPECIES_CACTURNE"
+              },
+              {
+                "min_level": 45,
+                "max_level": 52,
+                "species": "SPECIES_HARIYAMA"
+              },
+              {
+                "min_level": 45,
+                "max_level": 52,
+                "species": "SPECIES_DRAPION"
+              },
+              {
+                "min_level": 48,
+                "max_level": 52,
+                "species": "SPECIES_HARIYAMA"
+              },
+              {
+                "min_level": 48,
+                "max_level": 52,
+                "species": "SPECIES_HARIYAMA"
+              },
+              {
+                "min_level": 48,
+                "max_level": 52,
+                "species": "SPECIES_DRAPION"
+              },
+              {
+                "min_level": 48,
+                "max_level": 52,
+                "species": "SPECIES_HERACROSS"
+              },
+              {
+                "min_level": 48,
+                "max_level": 52,
+                "species": "SPECIES_HYDREIGON"
+              },
+              {
+                "min_level": 53,
+                "max_level": 53,
+                "species": "SPECIES_RHYPERIOR"
+              },
+              {
+                "min_level": 53,
+                "max_level": 53,
+                "species": "SPECIES_HYDREIGON"
+              }
+            ]
+          },
           "water_mons": {
             "encounter_rate": 4,
             "mons": [

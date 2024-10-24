@@ -8,6 +8,7 @@ EA_Talk_Script::
 // EA House Script with updated dialogue and flag setting
 lock
 faceplayer
+goto_if_set FLAG_GOT_STARTER_FROM_EA EA_After_Flag
 msgbox Text_EA_Intro, MSGBOX_NPC
 waitmessage
 
@@ -81,13 +82,12 @@ Give_Team3:
 	goto Give_Pokeballs
 
 Give_Pokeballs:
-	// Give the player 5 Pokéballs after giving Pokémon
-	giveitem ITEM_POKE_BALL, 5
 	msgbox Text_PokeballsGiven, MSGBOX_DEFAULT
 	waitmessage
 
 	// Set flag to indicate the dialogue is now different
 	setflag FLAG_GOT_STARTER_FROM_EA
+	setvar VAR_MOSSDEEP_CITY_STATE 0x02
 	goto End
 
 End:
@@ -113,18 +113,6 @@ Heal_Pokemon:
 	waitmessage
 	goto Check_Pokeballs
 
-Check_Pokeballs:
-	// Check if the player has no Pokéballs and give them 10 if necessary
-	checkitem ITEM_POKE_BALL, 1
-	compare VAR_RESULT, 0
-	goto_if_eq Give_10_Pokeballs
-	goto End_After
-
-Give_10_Pokeballs:
-	giveitem ITEM_POKE_BALL, 10
-	msgbox Text_PokeballsGivenAgain, MSGBOX_DEFAULT
-	waitmessage
-
 End_After:
 	release
 	end
@@ -137,9 +125,8 @@ Text_EA_Intro:
 Text_EA_Details:
 	.string "{COLOR RED}EA{COLOR DARK_GRAY}: The forces of {COLOR GREEN}TIAMET{COLOR DARK_GRAY} are wreaking havoc...\n"
 	.string "The wild POKÉMON you see are her creations, born of chaos and destruction.\p"
-	.string "These creatures cannot be tamed by normal means, but I have devised a way to control them.\p"
-	.string "Using my magic, I have created special spheres, {COLOR GREEN}POKÉBALLS{COLOR DARK_GRAY}, that can trap the monsters.\p"
-	.string "Within these balls, the POKÉMON are imbued with my power, allowing them to obey you.$"
+	.string "These creatures cannot be tamed by normal means, but I\n"
+	.string "have found a way to control them, using my magic.\p"
 
 Text_EA_ChooseTeam:
 	.string "{COLOR RED}EA{COLOR DARK_GRAY}: I will grant you a team of POKÉMON that I have tamed using my magic.\n"
@@ -170,20 +157,17 @@ Text_TeamGiven:
 	.string "{COLOR RED}EA{COLOR DARK_GRAY}: Take care of them.\n"
 	.string "They are your allies, granted to you through my magic.$"
 
-Text_PokeballsGiven:
-	.string "{COLOR RED}EA{COLOR DARK_GRAY}: Here, take these {COLOR GREEN}POKÉBALLS{COLOR DARK_GRAY}.\n"
-	.string "With them, you can capture any wild POKÉMON that Tiamet sends against us.$"
-
 Text_EA_AfterFlag:
-	.string "{COLOR RED}EA{COLOR DARK_GRAY}: How are you doing?\n"
 	.string "The battle is long, but we are making progress.$"
 
 Text_EA_HealOffer:
 	.string "{COLOR RED}EA{COLOR DARK_GRAY}: Would you like me to heal your POKÉMON?$"
 
 Text_EA_Healing:
-	.string "{COLOR RED}EA{COLOR DARK_GRAY}: Your POKÉMON are now fully healed.$"
+	.string "Your POKÉMON are now fully healed.$"
 
-Text_PokeballsGivenAgain:
-	.string "{COLOR RED}EA{COLOR DARK_GRAY}: It looks like you're out of {COLOR GREEN}POKÉBALLS{COLOR DARK_GRAY}.\n"
-	.string "Here, take these to keep going.$"
+Text_PokeballsGiven:
+	.string "You should head North to the City of Uruk.\n"
+	.string "I have sensed one of {COLOR GREEN}TIAMET's{COLOR DARK_GRAY} generals\n"
+	.string "is hiding out there.\p"
+	.string "Find and defeat them to weaken {COLOR GREEN}TIAMET's{COLOR DARK_GRAY} forces."
