@@ -1,61 +1,69 @@
+
 gText_Birch_Welcome::
-	.string "Hi! Sorry to keep you waiting!\p"
-	.string "Welcome to the world of POKéMON!\p"
-	.string "My name is BIRCH.\p"
-	.string "But everyone calls me the POKéMON\n"
-	.string "PROFESSOR.\p"
-	.string "$"
-
-gText_Birch_Pokemon::
-	.string "This is what we call a “POKéMON.”\p"
-	.string "\n"
-	.string "$"
-
-gText_Birch_MainSpeech::
-	.string "This world is widely inhabited by\n"
-	.string "creatures known as POKéMON.\p"
-	.string "We humans live alongside POKéMON,\n"
-	.string "at times as friendly playmates, and\l"
-	.string "at times as cooperative workmates.\p"
-	.string "And sometimes, we band together\n"
-	.string "and battle others like us.\p"
-	.string "But despite our closeness, we don't\n"
-	.string "know everything about POKéMON.\p"
-	.string "In fact, there are many, many\n"
-	.string "secrets surrounding POKéMON.\p"
-	.string "To unravel POKéMON mysteries,\n"
-	.string "I've been undertaking research.\l"
-	.string "That's what I do.\p"
-	.string "$"
-
-gText_Birch_AndYouAre::
-	.string "And you are?$"
+	.string "{COLOR RED}EA{COLOR DARK_GRAY}: At last, you've arrived.\p"
+	.string "I've awaited your coming, knowing you\n"
+	.string "would one day stand before me.\p"
+	.string "You are the one foretold to aid in ending\n"
+	.string "this war, the chosen to bring peace.\p"
+	.string "Before we proceed, I must know more\n"
+	.string "about you — we have little time to waste.$"
 
 gText_Birch_BoyOrGirl::
-	.string "Are you a boy?\n"
+	.string "{COLOR RED}EA{COLOR DARK_GRAY}: First, tell me, are you a boy?\n"
 	.string "Or are you a girl?$"
 
 gText_Birch_WhatsYourName::
-	.string "All right.\n"
-	.string "What's your name?$"
+	.string "{COLOR RED}EA{COLOR DARK_GRAY}: And what is your name, the one that\n"
+	.string "shall be remembered in legend?$"
 
 gText_Birch_SoItsPlayer::
-	.string "So it's {PLAYER}{KUN}?$"
+	.string "{COLOR RED}EA{COLOR DARK_GRAY}: {PLAYER}, a name that shall echo\n"
+	.string "through history.$"
 
 gText_Birch_YourePlayer::
-	.string "Ah, okay!\p"
-	.string "You're {PLAYER}{KUN} who's moving to my\n"
-	.string "hometown of LITTLEROOT.\l"
-	.string "I get it now!\p"
-	.string "$"
+	.string "{COLOR RED}EA{COLOR DARK_GRAY}: Ah, yes... {PLAYER}, you are destined\n"
+	.string "for greatness.\p"
+	.string "Your arrival is not by chance, but by fate.$"
+
+gText_Birch_MainSpeech::
+	.string "{COLOR RED}EA{COLOR DARK_GRAY}: This world was once at peace, but\n"
+	.string "{COLOR GREEN}TIAMET{COLOR DARK_GRAY}, goddess of the oceans and chaos,\n"
+	.string "has plunged us into war.\p"
+	.string "She created the creatures we call {COLOR GREEN}POKÉMON{COLOR DARKGRAY},\n"
+	.string "unleashing them to wage her war against\n"
+	.string "the gods.\p"
+	.string "We were powerless until I, {COLOR RED}EA{COLOR DARKGRAY},\n"
+	.string "god of waters and wisdom, used my powers\n"
+	.string "to create {COLOR GREEN}POKÉBALLS{COLOR DARKGRAY}, able to trap her\n"
+	.string "monsters and bend them to our will.$"
+
+gText_Birch_Pokemon::
+	.string "{COLOR RED}EA{COLOR DARKGRAY}: These creatures, forged in chaos by {COLOR GREEN}TIAMET{COLOR DARKGRAY},\n"
+	.string "now serve as our only means to resist\n"
+	.string "her fury.\p"
+	.string "They are dangerous, yet with my magic,\n"
+	.string "you will command them.$"
+
+gText_Birch_WarHistory::
+	.string "{COLOR RED}EA{COLOR DARKGRAY}: Long ago, the gods lived in balance,\n"
+	.string "each ruling their own domain.\p"
+	.string "But {COLOR GREEN}TIAMET{COLOR DARKGRAY}'s desire for domination grew,\n"
+	.string "leading to this war.\p"
+	.string "Now, the gods are scattered, weakened,\n"
+	.string "and her wild creations roam free, causing\n"
+	.string "destruction wherever they go.$"
+
+gText_Birch_AndYouAre::
+	.string "{COLOR RED}EA{COLOR DARKGRAY}: You, {PLAYER}, are the key to ending\n"
+	.string "this conflict.\p"
+	.string "With the {COLOR GREEN}POKÉMON{COLOR DARKGRAY} I bestow upon you,\n"
+	.string "you will help us take control of {COLOR GREEN}TIAMET{COLOR DARKGRAY}'s\n"
+	.string "creations and bring order back to this world.$"
 
 gText_Birch_AreYouReady::
-	.string "All right, are you ready?\p"
-	.string "Your very own adventure is about\n"
-	.string "to unfold.\p"
-	.string "Take courage, and leap into the\n"
-	.string "world of POKéMON where dreams,\l"
-	.string "adventure, and friendships await!\p"
-	.string "Well, I'll be expecting you later.\n"
-	.string "Come see me in my POKéMON LAB.\p"
-	.string "$"
+	.string "{COLOR RED}EA{COLOR DARKGRAY}: Are you ready to embrace your fate?\p"
+	.string "Your journey begins now, and the fate\n"
+	.string "of the gods and all creation rests in your\n"
+	.string "hands.\p"
+	.string "Go forth, {PLAYER}, and let your legend be\n"
+	.string "written in the stars.$"
