@@ -847,3 +847,14 @@ const struct Tileset gTileset_Testing =
     .metatileAttributes = gMetatileAttributes_Testing,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_InteriorAlt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_InteriorAlt,
+    .palettes = gTilesetPalettes_InteriorAlt,
+    .metatiles = gMetatiles_InteriorAlt,
+    .metatileAttributes = gMetatileAttributes_InteriorAlt,
+    .callback = NULL,
+};

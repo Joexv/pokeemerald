@@ -457,7 +457,7 @@ Movement_EA_WalkUp:
 
 // EA's dialogue with the name at the start
 Text_EA_FollowMe:
-    .string "{COLOR RED}EA:{COLOR DARK_GRAY} Follow me into my house.$"
+    .string "{COLOR BLUE}EA:{COLOR DARK_GRAY} Follow me into my house.$"
 
 NPC_1::
 lock
@@ -471,27 +471,26 @@ NPC1_PostFlag:
 msgbox Text_NPC1_PostFlag, MSGBOX_NPC
 release
 end
-
 Text_NPC1_PreFlag:
     .string "These wild POKÉMON... they've been tearing through our homes...\p"
-    .string "But I know {COLOR RED}EA{COLOR DARK_GRAY} will protect us... right?$"
+    .string "But I know {COLOR BLUE}EA{COLOR DARK_GRAY} will protect us... right?$"
 
 Text_NPC1_PostFlag:
-    .string "You're working with {COLOR RED}EA{COLOR DARK_GRAY}, aren't you?\p"
+    .string "You're working with {COLOR BLUE}EA{COLOR DARK_GRAY}, aren't you?\p"
     .string "Please... together, you have to stop this madness!$"
 
 NPC_2::
-lock
-faceplayer
-goto_if_set FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA NPC2_PostFlag
-msgbox Text_NPC2_PreFlag, MSGBOX_NPC
-release
-end
+    lock
+    faceplayer
+    goto_if_set FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA NPC2_PostFlag
+    msgbox Text_NPC2_PreFlag, MSGBOX_NPC
+    release
+    end
 
 NPC2_PostFlag:
-msgbox Text_NPC2_PostFlag, MSGBOX_NPC
-release
-end
+    msgbox Text_NPC2_PostFlag, MSGBOX_NPC
+    release
+    end
 
 Text_NPC2_PreFlag:
     .string "I saw {COLOR BLUE}EA{COLOR DARK_GRAY} today. He seemed so calm, even with all these monsters about...\p"
@@ -502,38 +501,38 @@ Text_NPC2_PostFlag:
     .string "We need all the help we can get.$"
 
 NPC_3::
-lock
-faceplayer
-goto_if_set FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA NPC3_PostFlag
-msgbox Text_NPC3_PreFlag, MSGBOX_NPC
-release
-end
+    lock
+    faceplayer
+    goto_if_set FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA NPC3_PostFlag
+    msgbox Text_NPC3_PreFlag, MSGBOX_NPC
+    release
+    end
 
 NPC3_PostFlag:
-msgbox Text_NPC3_PostFlag, MSGBOX_NPC
-release
-end
+    msgbox Text_NPC3_PostFlag, MSGBOX_NPC
+    release
+    end
 
 Text_NPC3_PreFlag:
-    .string "Mama says the wild POKÉMON are bad... but {COLOR RED}EA{COLOR DARK_GRAY} will protect us...\p"
+    .string "Mama says the wild POKÉMON are bad... but {COLOR BLUE}EA{COLOR DARK_GRAY} will protect us...\p"
     .string "I hope he can...$"
 
 Text_NPC3_PostFlag:
-    .string "You and {COLOR RED}EA{COLOR DARK_GRAY} will stop the bad POKÉMON, right?\p"
+    .string "You and {COLOR BLUE}EA{COLOR DARK_GRAY} will stop the bad POKÉMON, right?\p"
     .string "Please be fast... I'm scared.$"
 
 NPC_4::
-lock
-faceplayer
-goto_if_set FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA NPC4_PostFlag
-msgbox Text_NPC4_PreFlag, MSGBOX_NPC
-release
-end
+    lock
+    faceplayer
+    goto_if_set FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA NPC4_PostFlag
+    msgbox Text_NPC4_PreFlag, MSGBOX_NPC
+    release
+    end
 
 NPC4_PostFlag:
-msgbox Text_NPC4_PostFlag, MSGBOX_NPC
-release
-end
+    msgbox Text_NPC4_PostFlag, MSGBOX_NPC
+    release
+    end
 
 Text_NPC4_PreFlag:
     .string "I've seen many battles in my time, but this war between the gods...\p"
@@ -544,17 +543,17 @@ Text_NPC4_PostFlag:
     .string "Stay strong, we believe in you.$"
 
 NPC_5::
-lock
-faceplayer
-goto_if_set FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA NPC5_PostFlag
-msgbox Text_NPC5_PreFlag, MSGBOX_NPC
-release
-end
+    lock
+    faceplayer
+    goto_if_set FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA NPC5_PostFlag
+    msgbox Text_NPC5_PreFlag, MSGBOX_NPC
+    release
+    end
 
 NPC5_PostFlag:
-msgbox Text_NPC5_PostFlag, MSGBOX_NPC
-release
-end
+    msgbox Text_NPC5_PostFlag, MSGBOX_NPC
+    release
+    end
 
 Text_NPC5_PreFlag:
     .string "It's been harder to sell anything with these monsters everywhere...\p"
@@ -565,25 +564,24 @@ Text_NPC5_PostFlag:
     .string "I trust you both to set things right.$"
 
 NPC_6::
-lock
-faceplayer
-
-goto_if_set FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA NPC6_PostFlag
-msgbox Text_NPC6_PreFlag, MSGBOX_NPC
-release
-end
+    lock
+    faceplayer
+    goto_if_set FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA NPC6_PostFlag
+    msgbox Text_NPC6_PreFlag, MSGBOX_NPC
+    release
+    end
 
 NPC6_PostFlag:
-msgbox Text_NPC6_PostFlag, MSGBOX_NPC
-release
-end
+    msgbox Text_NPC6_PostFlag, MSGBOX_NPC
+    release
+    end
 
 Text_NPC6_PreFlag:
     .string "My children are terrified... I don’t know what to do!\p"
-    .string "If {COLOR RED}EA{COLOR DARK_GRAY} can’t protect us, who will?$"
+    .string "If {COLOR BLUE}EA{COLOR DARK_GRAY} can’t protect us, who will?$"
 
 Text_NPC6_PostFlag:
-    .string "You’re working with {COLOR RED}EA{COLOR DARK_GRAY}? Thank the gods...\n"
+    .string "You’re working with {COLOR BLUE}EA{COLOR DARK_GRAY}? Thank the gods...\n"
     .string "Please, help us before it's too late.$"
 
 MossdeepCity_EventScript_TempleReminder::

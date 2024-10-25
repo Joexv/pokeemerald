@@ -213,3 +213,6 @@ const u16 gMetatileAttributes_AutumRuins[] = INCBIN_U16("data/tilesets/secondary
 
 const u16 gMetatiles_Testing[] = INCBIN_U16("data/tilesets/primary/testing/metatiles.bin");
 const u16 gMetatileAttributes_Testing[] = INCBIN_U16("data/tilesets/primary/testing/metatile_attributes.bin");
+
+const u16 gMetatiles_InteriorAlt[] = INCBIN_U16("data/tilesets/primary/interior_alt/metatiles.bin");
+const u16 gMetatileAttributes_InteriorAlt[] = INCBIN_U16("data/tilesets/primary/interior_alt/metatile_attributes.bin");
